@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(53, 53, 52);
+}
+
+#calculadora {
+    user-select: none;
+    width: 250px;
+    height: 500px;
+    display:grid;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    grid-template-areas: 
+    "visor visor visor visor" 
+    "visor visor visor visor" 
+    "limpar limpar dividir multiplicar"
+    "sete oito nove somar"
+    "quatro cinco seis diminuir"
+    "um dois tres igual"
+    "zero zero ponto igual"
+    "btnLimparHistorico btnLimparHistorico btnLimparHistorico btnLimparHistorico"
+    
+}
+
+#calculadora .btn {
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
+    color: rgb(231, 217, 217);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+
+#calculadora .btn:hover {
+    background-color:rgba(255, 255, 255, 0.441);
+    opacity: 3;
+    transition: 0.5s;
+}
+
+#btnLimparHistorico{
+    background-color: rgba( 255, 255, 255, 0.25 );
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
+    color: rgb(231, 217, 217);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+
+#btnLimparHistorico:hover{
+    background-color:  rgba(255, 255, 255, 0.441);
+    opacity: 3;
+    transition: 0.5s;
+}
+
+#historico {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+
+
+#visor {
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    border: solid 6px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    justify-items: left;
+    align-items: center;
+    padding: 10px;
+    border-color: black;
+}
